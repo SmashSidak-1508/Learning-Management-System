@@ -5,17 +5,17 @@ LMS divided into two sections:- Student and Admin
 student can perform USER, COURSE AND PAYMENT
 ADMIN can access USER COURSE PAYMENT
 
-USER:- STUDENT
- -> create account
- -> Login
- ->Reset Password
- ->Profile
- ->Update Profile
- ->logout
+USER:- STUDENT((/api/v1/user))
+ -> create account(/api/v1/register)
+ -> Login(/login)
+ ->Reset Password(/change-password)
+ ->Profile(/me)
+ ->Update Profile(/me:id)
+ ->logout(/logout)
 
- USER -> courses
- 1. list of courses -> access
- 2. View Course
+ USER -> courses(/api/v1/courses)
+ 1. list of courses -> access(/)
+ 2. View Course(/:id) to view respective courses
 
  ADMIN side:->
  1. create account from database to get access of admin -> Update in the 
@@ -44,4 +44,3 @@ USER:- STUDENT
  3. react JS
  4. node JS
 
- 
